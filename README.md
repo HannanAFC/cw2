@@ -3,6 +3,8 @@ Repository for Coursework 2 for Tax Calculator
 
 CW2 Tax Breakdowns
 
+Source: https://www.thecompleteuniversityguide.co.uk/student-advice/finance/student-loan-repayment-calculator
+
 Tax Brackets
 - Income below and at £12,570 not taxed
 - Income above £12,570 to £50,270 taxed at 20%
@@ -22,7 +24,8 @@ Plan 2, if you earn over:
 * £27,295 a year
 * £2,274 a month
 * £524 a week
-You only start repaying this plan if you earn over £28,470. This makes it more complicated for anybody who would have changing monthly incomes but we can exclude these examples if needed as they make it a bit too complex. We could clarify this tool is for people who have predefined incomes for the year. Threshold income and interest rates increase every year.
+You only start repaying this plan if you earn over £28,470. This makes it more complicated for anybody who would have changing monthly incomes but we can exclude these examples if needed as they make it a bit too complex. We could clarify this tool is for people who have predefined incomes for the year. Threshold income and interest rates increase every year. Might be too complex to implement the sliding scale RPI scale but included screenshot below.
+![Plan 2 PRI Breakdown](readmeImages/plan2_breakdown.jpg?raw=true)
 
 Plan 3 (Postgrad Loan), if you earn over:
 * £21,000 a year
