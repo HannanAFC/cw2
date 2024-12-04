@@ -2,33 +2,6 @@ import smtplib
 import openpyxl
 from tkinter import Tk, Label, Entry, Button, messagebox, Text
 from tkinter import ttk
-from msal import PublicClientApplication
-
-
-class EmailService:
-    def __init__(self, smtp_server, sender_email, sender_password):
-        self.smtp_server = smtp_server
-        self.sender_email = sender_email
-        self.sender_password = sender_password
-
-    def send_email(self, receiver_email, subject, body):
-        message = f"Subject: {subject}\n\n{body}"
-        with smtplib.SMTP(self.smtp_server, 587) as server:
-            server.starttls()
-            server.login(self.sender_email, self.sender_password, initial_response_ok=True)
-            server.sendmail(self.sender_email, receiver_email, message)
-
-    def send_emails_from_spreadsheet(self, filename, sheet_name, subject, body_template):
-        workbook = openpyxl.load_workbook(filename)
-        sheet = workbook[sheet_name]
-        max_row = sheet.max_row
-
-        for row in range(2, max_row + 1):
-            receiver_email = sheet[f'A{row}'].value
-            name = sheet[f'B{row}'].value
-            college = sheet[f'C{row}'].value
-            personalized_body = body_template.replace("[name]", str(name)).replace("[college]", str(college))
-            self.send_email(receiver_email, subject, personalized_body)
 
 
 class EmailServiceApp:
