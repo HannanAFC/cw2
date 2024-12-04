@@ -4,22 +4,19 @@ from tkinter import Tk, Label, Entry, Button, messagebox, Text
 from tkinter import ttk
 
 
-class EmailServiceApp:
+class TakeHomeGUI:
     def __init__(self, root):
         self.root = root
-        self.root.title("Email Service")
+        self.root.title("Take Home Pay Calculator")
         self.root.geometry('400x500')
 
         # Create labels and entry fields for each input
-        self.create_label_and_combobox("File Name", ["Basketball.xlsx", "Rugby.xlsx", "Football.xlsx"])
-        self.create_label_and_entry("Sheet Name")
-        self.create_label_and_entry("Sender Email")
-        self.create_label_and_entry("Sender Password")
-        self.create_label_and_entry("Subject")
-        self.create_label_and_textbox("Body Template")
-
-        send_email_button = Button(self.root, text="Send Emails", command=self.send_emails)
-        send_email_button.pack()
+        self.create_label_and_entry("Username")
+        self.create_label_and_entry("Password")
+        self.create_label_and_combobox("Annual Gross Income", ["< £12,570", "£12,571-£50,270", "£50,271-£125,140", ">£125,140"])
+        self.create_label_and_combobox("Employment Status", ["Employed", "Self Employed", "Unemployed", "Student", "Other"])
+        self.create_label_and_entry("Debt")
+        self.create_label_and_textbox("Additional Information")
 
     def create_label_and_entry(self, text):
         label = Label(self.root, text=text)
@@ -42,20 +39,12 @@ class EmailServiceApp:
         textbox.pack()
         setattr(self, f"{text.lower().replace(' ', '_')}Textbox", textbox)
 
-    def send_emails(self):
-        filename = self.file_nameCombobox.get()
-        sheet_name = self.sheet_nameEntry.get()
-        sender_email = self.sender_emailEntry.get()
-        sender_password = self.sender_passwordEntry.get()
-        subject = self.subjectEntry.get()
-        body_template = self.body_templateTextbox.get("1.0", "end-1c")
-        smtp_server = "smtp.outlook.com"
-        email_service = EmailService(smtp_server, sender_email, sender_password)
-        email_service.send_emails_from_spreadsheet(filename, sheet_name, subject, body_template)
-        messagebox.showinfo("Success", "Emails sent successfully!")
+    def Sign_Up(self):
+        pass
+    
 
 
 if __name__ == "__main__":
     root = Tk()
-    app = EmailServiceApp(root)
+    app = TakeHomeGUI(root)
     root.mainloop()
