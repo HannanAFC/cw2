@@ -28,7 +28,7 @@ Plan 2, if you earn over:
 * £2,274 a month
 * £524 a week
 You only start repaying this plan if you earn over £28,470. This makes it more complicated for anybody who would have changing monthly incomes but we can exclude these examples if needed as they make it a bit too complex. We could clarify this tool is for people who have predefined incomes for the year. Threshold income and interest rates increase every year. Might be too complex to implement the sliding scale RPI scale but included screenshot below.
-![Plan 2 PRI Breakdown](readmeImages/plan2_breakdown.jpg)
+![Plan 2 PRI Breakdown](readmeImages/plan2_breakdown.jpg?raw=true)
 
 Plan 3 (Postgrad Loan), if you earn over:
 * £21,000 a year
@@ -50,7 +50,7 @@ Threshold Increases every year. You repay 9% of your income over this amount int
 
 <h2>National Insurance Contributions</h2>
 Most employees are category A, category can be found on pay slip.
-![Categories Breakdown 1](readmeImages/Category1.jpg)
-![Categories Breakdown 2](readmeImages/Category2.jpg)
-![Categories Breakdown 3](readmeImages/Category3.jpg)
+![Categories Breakdown 1](readmeImages/Category1.jpg?raw=true)
+![Categories Breakdown 2](readmeImages/Category2.jpg?raw=true)
+![Categories Breakdown 3](readmeImages/Category3.jpg?raw=true)
 Category X is for people who don’t have to pay national insurance, for example, under 16’s.
