@@ -1,17 +1,20 @@
 # cw2
 Repository for Coursework 2 for Tax Calculator
 
-CW2 Tax Breakdowns
+<h1>CW2 Tax Breakdowns</h1>
+<h2>References</h2>
+Source for Income Tax: https://www.gov.uk/income-tax-rates
+Source for student finance: https://www.thecompleteuniversityguide.co.uk/student-advice/finance/student-loan-repayment-calculator
+Source for National Insurance Contributions: https://www.gov.uk/national-insurance-rates-letters
+Source for NI Categories Breakdown: https://www.gov.uk/national-insurance-rates-letters/category-letters
 
-Source: https://www.thecompleteuniversityguide.co.uk/student-advice/finance/student-loan-repayment-calculator
-
-Tax Brackets
+<h2>Tax Brackets</h2>
 - Income below and at £12,570 not taxed
 - Income above £12,570 to £50,270 taxed at 20%
 - Income above £50,270 to £125,140 taxed at 40%
 - Income above £125,140 taxed at 45%
 
-Student Loan Repayments
+<h2>Student Loan Repayments</h2>
 Student loans repayments are taken once per pay period, so that depends on whether you earn weekly, monthly, yearly etc.
 
 Plan 1, if you earn over:
@@ -45,3 +48,9 @@ Plan 5 “for students from England taking out undergraduate student finance aft
 * £480 per week
 Threshold Increases every year. You repay 9% of your income over this amount interest rates based on RPI.
 
+<h2>National Insurance Contributions</h2>
+Most employees are category A, category can be found on pay slip.
+![Categories Breakdown 1](readmeImages/Category1.jpg?raw=true)
+![Categories Breakdown 2](readmeImages/Category2.jpg?raw=true)
+![Categories Breakdown 3](readmeImages/Category3.jpg?raw=true)
+Category X is for people who don’t have to pay national insurance, for example, under 16’s.
