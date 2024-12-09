@@ -3,9 +3,9 @@ Repository for Coursework 2 for Tax Calculator
 
 <h1>CW2 Tax Breakdowns</h1>
 <h2>References</h2>
-Source for Income Tax: https://www.gov.uk/income-tax-rates
-Source for student finance: https://www.thecompleteuniversityguide.co.uk/student-advice/finance/student-loan-repayment-calculator
-Source for National Insurance Contributions: https://www.gov.uk/national-insurance-rates-letters
+Source for Income Tax: https://www.gov.uk/income-tax-rates<br>
+Source for student finance: https://www.thecompleteuniversityguide.co.uk/student-advice/finance/student-loan-repayment-calculator<br>
+Source for National Insurance Contributions: https://www.gov.uk/national-insurance-rates-letters<br>
 Source for NI Categories Breakdown: https://www.gov.uk/national-insurance-rates-letters/category-letters
 
 <h2>Tax Brackets</h2>
