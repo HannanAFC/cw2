@@ -50,4 +50,7 @@ Threshold Increases every year. You repay 9% of your income over this amount int
 
 <h2>National Insurance Contributions</h2>
 Most employees are category A, category can be found on pay slip.
+![Categories Breakdown 1](readmeImages/Category1.jpg?raw=true)
+![Categories Breakdown 2](readmeImages/Category2.jpg?raw=true)
+![Categories Breakdown 3](readmeImages/Category3.jpg?raw=true)
 Category X is for people who don’t have to pay national insurance, for example, under 16’s.
