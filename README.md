@@ -49,8 +49,8 @@ Plan 5 “for students from England taking out undergraduate student finance aft
 Threshold Increases every year. You repay 9% of your income over this amount interest rates based on RPI.
 
 <h2>National Insurance Contributions</h2>
-Most employees are category A, category can be found on pay slip.
-![Categories Breakdown 1](readmeImages/category1.jpg?raw=true)
-![Categories Breakdown 2](readmeImages/category2.jpg?raw=true)
-![Categories Breakdown 3](readmeImages/category3.jpg?raw=true)
+Most employees are category A, category can be found on pay slip.<br>
+![Categories Breakdown 1](readmeImages/category1.jpg?raw=true)<br>
+![Categories Breakdown 2](readmeImages/category2.jpg?raw=true)<br>
+![Categories Breakdown 3](readmeImages/category3.jpg?raw=true)<br>
 Category X is for people who don’t have to pay national insurance, for example, under 16’s.
