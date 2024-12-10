@@ -1,3 +1,4 @@
+#Joel - added 9/12/24
 income = int(input("Your annual income"))
 if income <= 12570:
     tax = 0

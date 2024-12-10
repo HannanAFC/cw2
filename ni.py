@@ -1,3 +1,4 @@
+#Joel - added 9/12/24
 #placeholder inputs for testing, in monthly because easier
 income=int(input("What is your monthly income"))
 cat=input("What is your national insurance category?")

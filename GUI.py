@@ -1,4 +1,5 @@
 #gui for the project ~Matthew
+#initally added on 3/12/24, updated on 4/12/24
 import smtplib
 import openpyxl
 from tkinter import Tk, Label, Entry, Button, messagebox, Text

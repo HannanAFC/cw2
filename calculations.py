@@ -1,5 +1,6 @@
 #class to define income
 #parameters will probably change when we add student loans
+#Hannan - Income tax calculator made on 5/12/24, National Insurance 10/12/24
 class Income:
     def __init__(self, name, income):
         self.name = name
