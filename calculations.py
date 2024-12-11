@@ -2,10 +2,39 @@
 #parameters will probably change when we add student loans
 #Hannan - Income tax calculator made on 5/12/24, National Insurance 10/12/24
 class Income:
-    def __init__(self, name, income):
+    def __init__(self, name, income, monthly):
         self.name = name
         self.income = income
-        self.monthly = income/12
+
+    @property
+    def name(self):
+        return self.__name
+
+    @name.setter
+    def name(self, name):
+        self.__name = name
+
+    @property
+    def income(self):
+        return self.__income
+
+    @income.setter
+    def income(self, income):
+        self.validateIncome(income)
+        self.__income = income
+
+    def validateIncome(self, value):
+        if isinstance(value, str):
+            try:
+                value = float(value)
+            except ValueError:
+                print("Not an integer")
+        if value < 0:
+            raise ValueError("Income must be greater than or equal to zero")
+
+
+
+    #def validateIncome(self, value):
 
     #method calculates income income after tax and returns
     def returnIncomeAfterTax(self):
@@ -28,6 +57,8 @@ class Income:
     def returnNationalInsurance(self, plan):
         #for now have done it for plan A
         #I am using nested dict to allow us to store all the brackets and plans in one place
+        #the code below it takes the inputted plan that the user gives, finds it in the dictionary and uses its associated
+        #percentages
         planList = {
             "a": {
             "contribution1": 0,
@@ -125,6 +156,8 @@ class Income:
             bracket2 = planList[plan]["contribution2"] * (4189 - 1048)
             bracket3 = planList[plan]["contribution3"] * (self.monthly - 4189)
             return bracket1 + bracket2 + bracket3
+
+    #def returnStudentLoans(self):
 
 John = Income('John', 36790)
 print(John.returnIncomeAfterTax())
