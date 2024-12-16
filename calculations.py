@@ -5,6 +5,7 @@ class Income:
     def __init__(self, name, income, monthly):
         self.name = name
         self.income = income
+        self.monthly = monthly
 
     @property
     def name(self):
@@ -31,6 +32,15 @@ class Income:
                 print("Not an integer")
         if value < 0:
             raise ValueError("Income must be greater than or equal to zero")
+
+    @property
+    def monthly(self):
+        return self.__monthly
+
+    @monthly.setter
+    def monthly(self, monthly):
+        self.validateIncome(monthly)
+        self.__monthly = monthly
 
 
 
@@ -159,7 +169,7 @@ class Income:
 
     #def returnStudentLoans(self):
 
-John = Income('John', 36790)
+John = Income('John', 36790, 36790/12)
 print(John.returnIncomeAfterTax())
 print(John.returnIncomeAfterTax() - John.returnNationalInsurance("a") * 12)
 #getting take home pay of 30,008 from MSE calculator and 30008.88 from this so must be right.
