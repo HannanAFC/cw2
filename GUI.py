@@ -1,10 +1,7 @@
 #gui for the project ~Matthew
 #initally added on 3/12/24, updated on 4/12/24
-import smtplib
-import openpyxl
 from tkinter import Tk, Label, Entry, Button, messagebox, Text
 from tkinter import ttk
-
 
 class TakeHomeGUI:
     #creates the size and title of the tkinter window
@@ -16,10 +13,9 @@ class TakeHomeGUI:
         # Create labels and entry/combobox/textbox fields for each input
         self.create_label_and_entry("Username")
         self.create_label_and_entry("Password")
-        self.create_label_and_combobox("Annual Gross Income", ["< £12,570", "£12,571-£50,270", "£50,271-£125,140", ">£125,140"])
-        self.create_label_and_combobox("Employment Status", ["Employed", "Self Employed", "Unemployed", "Student", "Other"])
-        self.create_label_and_entry("Debt")
-        self.create_label_and_textbox("Additional Information")
+        self.create_label_and_entry("Annual Gross Income")
+        self.create_label_and_combobox("National Insurance Plan", ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "s", "v", "z"])
+
         # Creates sign up button, when clicked runs the function Sign_Up
         sign_up_button = Button(self.root, text="Sign Up", command=self.Sign_Up)
         sign_up_button.pack()
@@ -49,10 +45,9 @@ class TakeHomeGUI:
     def Sign_Up(self):
         Username = self.usernameEntry.get()
         Password = self.passwordEntry.get()
-        Annual_Gross_Income = self.annual_gross_incomeCombobox.get()
-        Employment_Status = self.employment_statusCombobox.get()
-        Debt = self.debtEntry.get()
-        Additional_Information = self.additional_informationTextbox.get("1.0", "end-1c")
+        Annual_Gross_Income = self.annual_gross_incomeEntry.get()
+        National_Insurance_Plan = self.national_insurance_PlanCombobox.get()
+
      # Function Sign_Up creates variables for each input entered when the button is clicked, so that it can be used in other areas of the program    
 
 
