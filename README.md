@@ -7,6 +7,8 @@ Source for Income Tax: https://www.gov.uk/income-tax-rates<br>
 Source for student finance: https://www.thecompleteuniversityguide.co.uk/student-advice/finance/student-loan-repayment-calculator<br>
 Source for National Insurance Contributions: https://www.gov.uk/national-insurance-rates-letters<br>
 Source for NI Categories Breakdown: https://www.gov.uk/national-insurance-rates-letters/category-letters
+Used this to validate income tax calculations: https://www.moneysavingexpert.com/tax-calculator/
+Used this to validate student loan repayments: https://www.thecompleteuniversityguide.co.uk/student-advice/finance/student-loan-repayment-calculator
 
 <h2>Tax Brackets</h2>
 - Income below and at £12,570 not taxed
