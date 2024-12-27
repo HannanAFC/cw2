@@ -237,7 +237,8 @@ class Income:
             },
             "2": {
                 "threshold": 27295,
-                "contribution": 0.09
+                "contribution": 0.09,
+                "extraInterest": 0
             },
             "3": {
                 "threshold": 21000,
@@ -257,12 +258,20 @@ class Income:
         }
         #calculation for yearly student loan contribution
         contribution = (self.income - planList[self.studentLoanPlan]["threshold"]) * planList[self.studentLoanPlan]["contribution"]
-        return contribution
+        #added the loan increase to this method as well
+        loanIncrease = self.studentLoanDebt * (1 + planList[self.studentLoanPlan]["extraInterest"] + self.interestRate)
+        return {
+            "contribution": contribution,
+            "loanIncrease": loanIncrease
+        }
 
 John = Income('John', 36790, 36790/12, "a", 29877, "2", 0.036)
 print(John.returnIncomeAfterTax())
 print(John.returnIncomeAfterTax() - John.returnNationalInsurance() * 12)
 print(John.returnStudentRepayments())
+contributionAndIncrease = John.returnStudentRepayments()
+print(contributionAndIncrease["contribution"])
+print(contributionAndIncrease["loanIncrease"])
 #all of these calculations seem right based of online calculators used
 #MSE used for the income tax
 #www.student-loan-calculator.co.uk used for student finance validation
