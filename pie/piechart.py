@@ -5,7 +5,7 @@ from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import tkinter as tk
 from calculations import Income
 #assigning variables to put into pie chart
-John = Income('John', 36790, 36790 / 12, "a")
+John = Income('John', 36790, 36790 / 12, "a", 29877, "2", 0.036)
 take_home = John.returnIncomeAfterTax() - (John.returnNationalInsurance() * 12)
 national_insurance = John.returnNationalInsurance() * 12
 income_tax = John.income - John.returnIncomeAfterTax()
