@@ -14,7 +14,7 @@ student_loan = John.returnStudentRepayments()["contribution"]
 def pie_chart(take_home, national_insurance, income_tax, student_loan, window):
     #assigning variables to pie chart labels
     y = ([take_home, national_insurance, income_tax, student_loan])
-    labels = [("Take Home pay" , take_home), ("National Insurance", national_insurance) , ("Income Tax", income_tax) , "Student loan repayments"]
+    labels = [("Take Home pay" , take_home), ("National Insurance", national_insurance) , ("Income Tax", income_tax) , ("Student loan repayments", student_loan)]
     #creating pie chart
     fig, ax = plt.subplots()
     ax.pie(y, labels=labels, autopct='%1.1f%%', startangle=90)
