@@ -77,7 +77,7 @@ class TakeHomeGUI:
             window.mainloop()
 
         except ValueError:
-            messagebox.showerror("Error", "Income cannot be calculated")
+            messagebox.showerror("Error", "Income cannot be calculated, please restart the program and try again")
 
     # Function Sign_Up creates variables for each input entered when the button is clicked, so that it can be used in other areas of the program
 
