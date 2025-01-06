@@ -5,13 +5,13 @@ from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import tkinter as tk
 from calculations import Income
 #assigning variables to put into pie chart
-"""John = Income('John', 36790, 36790 / 12, "a", 29877, "2", 0.036)"""
+"""John = Income('John', 36790, 36790 / 12, "a", 29877, "2", 0.036)
 take_home = John.returnIncomeAfterTax() - (John.returnNationalInsurance() * 12)
 national_insurance = John.returnNationalInsurance() * 12
 income_tax = John.income - John.returnIncomeAfterTax()
-student_loan = 2 #placeholder
-#creating pie chart
-def pie_chart():
+student_loan = John.returnStudentRepayments()["contribution"]
+#creating pie chart"""
+def pie_chart(take_home, national_insurance, income_tax, student_loan, window):
     #assigning variables to pie chart labels
     y = ([take_home, national_insurance, income_tax, student_loan])
     labels = [("Take Home pay" , take_home), ("National Insurance", national_insurance) , ("Income Tax", income_tax) , "Student loan repayments"]
@@ -26,6 +26,6 @@ def pie_chart():
 #placeholder tkinter window for testing
 """window = tk.Tk()
 window.title("Your Tax Breakdown")
-button=tk.Button(window, text="Pie", command=pie_chart)
+button=tk.Button(window, text="Pie", command=pie_chart(take_home, national_insurance, income_tax, student_loan))
 button.pack()
 window.mainloop()"""

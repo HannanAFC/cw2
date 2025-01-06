@@ -3,6 +3,7 @@
 from tkinter import Tk, Label, Entry, Button, messagebox, Text
 from tkinter import ttk
 from calculations import Income
+from piechart import pie_chart
 
 
 class TakeHomeGUI:
@@ -64,6 +65,17 @@ class TakeHomeGUI:
             user = Income(Username, float(Annual_Gross_Income), float(Annual_Gross_Income)/12, National_Insurance_Plan, float(Student_Loan_Debt_Remaining), Student_Loan_Plan, float(Interest_Rate))
             self.take_home_payEntry.delete(0)
             self.take_home_payEntry.insert(0, (user.returnIncomeAfterTax() - user.returnNationalInsurance() * 12))
+            take_home = user.returnIncomeAfterTax() - (user.returnNationalInsurance() * 12)
+            national_insurance = user.returnNationalInsurance() * 12
+            income_tax = user.income - user.returnIncomeAfterTax()
+            student_loan = user.returnStudentRepayments()["contribution"]
+
+            window = Tk()
+            window.title("Your Tax Breakdown")
+            button = ttk.Button(window, text="Pie", command=pie_chart(take_home, national_insurance, income_tax, student_loan, window))
+            button.pack()
+            window.mainloop()
+
         except ValueError:
             messagebox.showerror("Error", "Income cannot be calculated")
 
