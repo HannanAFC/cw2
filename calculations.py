@@ -265,13 +265,13 @@ class Income:
             "loanIncrease": loanIncrease
         }
 
-John = Income('John', 36790, 36790/12, "a", 29877, "2", 0.036)
+"""John = Income('John', 36790, 36790/12, "a", 29877, "2", 0.036)
 print(John.returnIncomeAfterTax())
 print(John.returnIncomeAfterTax() - John.returnNationalInsurance() * 12)
 print(John.returnStudentRepayments())
 contributionAndIncrease = John.returnStudentRepayments()
 print(contributionAndIncrease["contribution"])
-print(contributionAndIncrease["loanIncrease"])
+print(contributionAndIncrease["loanIncrease"])"""
 #all of these calculations seem right based of online calculators used
 #MSE used for the income tax
 #www.student-loan-calculator.co.uk used for student finance validation
