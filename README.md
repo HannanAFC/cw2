@@ -59,5 +59,6 @@ Most employees are category A, category can be found on pay slip.<br>
 Category X is for people who don’t have to pay national insurance, for example, under 16’s.
 
 <h2>Final Project and GUI</h2>
-Here is what the final GUI looks like, it features dropdown boxes for plan selection and input fields for dynamic data. The program also features error handling using an alert box informing the user there was an error.
+Here is what the final GUI looks like, it features dropdown boxes for plan selection and input fields for dynamic data. The program also features error handling using an alert box informing the user there was an error.<br>
+
 ![Final GUI and program design](readmeImages/gui_design.jpg?raw=true)
